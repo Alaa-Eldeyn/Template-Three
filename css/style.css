@@ -178,6 +178,20 @@ a{
         height: 200%
     }
 }
+@keyframes heart{
+    0%, 100%{
+        font-size: 1rem;
+    }
+    20%{
+        font-size: 1.2rem;
+    }
+    30%{
+        font-size: 1rem;
+    }
+    45%{
+        font-size: 1.1rem;
+    }
+}
 /* End Animation */
 /* End Global Rules */
 
@@ -1690,6 +1704,9 @@ footer .part{
 }
 .row-two span{
     color: #f44036;
+}
+.row-two span:hover{
+    animation: heart 1s infinite alternate;
 }
 @media (max-width: 400px){
     .row-two{
