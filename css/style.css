@@ -1,3 +1,23 @@
+/* 
+    1. Variables
+    2. Global Rules
+    3. Header
+    4. Landing
+    5. Articles
+    6. Gallery
+    7. Features
+    8. Testimonials
+    9. Team members
+    10. Services
+    11. Skills
+    12. How it works
+    13. Events
+    14. Pricing
+    15. Video
+    16. States
+    17. Discount
+    18. Footer
+*/
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;700;900&display=swap');
 /* Start Variables */
 :root {
@@ -930,6 +950,16 @@ header .nav-links li:hover{
     height: 30px;
     margin: 8px 0 25px;
     position: relative;
+    background-color: #ececec;
+}
+.skills .progress div span{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: .5s;
 }
 #html::after, #python::after, #javascript::after, #css:after{
     position: absolute;
@@ -942,20 +972,11 @@ header .nav-links li:hover{
     font-size: .8rem;
     color: var(--main-color);
 }
-.progress #html, #python{
-    background: linear-gradient(to right, #2196f3 80%, #ececec 20% );
-}
 #html::after, #python::after{
     content: '80%';
 }
-.progress #css{
-    background: linear-gradient(to right, #2196f3 85%, #ececec 15% );
-}
 #css::after{
     content: '85%';
-}
-.progress #javascript{
-    background: linear-gradient(to right, #2196f3 70%, #ececec 30% );
 }
 #javascript::after{
     content: '70%';
@@ -1107,7 +1128,6 @@ header .nav-links li:hover{
     font-weight: 700;
     font-size: 2rem;
     margin-top: 7px;
-    margin-right: 2px;
     color: var(--main-color);
 }
 .timer-units .unit .u-p2{
@@ -1126,12 +1146,6 @@ header .nav-links li:hover{
     line-height: 1.5;
     margin-bottom: .5rem;
     padding: 5px 20px;
-}
-.timer-data .massage span{
-    color: #f44036;
-    font-weight: 700;
-    margin: .5rem;
-    display: block;
 }
 .mail-me {
     margin: 2rem auto;
